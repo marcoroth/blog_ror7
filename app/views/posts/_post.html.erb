@@ -1,0 +1,15 @@
+<div id="<%= dom_id post %>" class="scaffold_record">
+  <p>
+    <strong>Title:</strong>
+    <%= post.title %>
+  </p>
+
+  <p>
+    <strong>Content:</strong>
+    <div class="trix-content"><%= post.content %></div>
+  </p>
+
+  <p>
+    <%= link_to "Show this post", post %>
+  </p>
+</div>

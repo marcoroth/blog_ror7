@@ -21,9 +21,6 @@ gem "turbo-rails", ">= 0.7.11"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails", ">= 0.4.0"
 
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder", "~> 2.7"
-
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
@@ -40,13 +37,17 @@ gem "bootsnap", ">= 1.4.4", require: false
 # gem "sassc-rails", "~> 2.1"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
   gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
   gem "rspec-rails", "~> 5.0"
   gem "guard-rspec", "~> 4.7"
+
+  gem "faker", "~> 2.19"
+  gem "factory_bot_rails", "~> 6.2"
+  gem "pry", "~> 0.14.1"
 end
 
 group :development do
@@ -66,5 +67,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem "simplecov", "~> 0.21.2"
+
+  gem "shoulda-matchers", "~> 5.0"
 end
 
+gem "tailwindcss-rails", "~> 0.5.0"

@@ -16,3 +16,12 @@ This project should approach the alpha version of Ruby on Rails 7. Every feature
 - SQLite
 - PostgreSQL for production
 - GIT FLOW
+- TailwindCSS
+
+## HELPERS
+
+Some gems to help development
+
+- Faker
+- Pry
+- Factory Bot
