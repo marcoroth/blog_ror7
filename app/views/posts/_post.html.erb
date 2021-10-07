@@ -1,15 +1,7 @@
-<div id="<%= dom_id post %>" class="scaffold_record">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
-
-  <p>
-    <strong>Content:</strong>
-    <div class="trix-content"><%= post.content %></div>
-  </p>
-
-  <p>
-    <%= link_to "Show this post", post %>
-  </p>
+<div id="<%= dom_id post %>" class="p-4 mb-2 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold"><%= post.title %></h1>
+    <p class="col-md-8 fs-4"><%= post.content %></p>
+    <%= link_to 'Details of this post', post, class: 'btn btn-primary btn-small' %>
+  </div>
 </div>

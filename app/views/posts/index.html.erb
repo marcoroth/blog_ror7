@@ -1,7 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>List of Posts</h1>
-
-<div id="posts">
+<p id="notice"><%= notice %></p>
+<%= turbo_stream_from "posts" %>
+<%= turbo_frame_tag "posts" do %>
   <%= render @posts %>
-</div>
+<% end %>

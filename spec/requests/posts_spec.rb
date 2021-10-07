@@ -66,6 +66,7 @@ RSpec.describe "/posts", type: :request do
       it "redirects to the created post" do
         post posts_url, params: { post: valid_attributes }
         expect(response).to redirect_to(post_url(Post.last))
+        expect(flash[:success]).to eq('Post was successfully created.')
       end
     end
 
@@ -94,6 +95,7 @@ RSpec.describe "/posts", type: :request do
         patch post_url(post), params: { post: new_attributes }
         post.reload
         expect(response).to redirect_to(post_url(post))
+        expect(flash[:success]).to eq('Post was successfully updated.')
       end
     end
 
@@ -118,6 +120,7 @@ RSpec.describe "/posts", type: :request do
       post = Post.create! valid_attributes
       delete post_url(post)
       expect(response).to redirect_to(posts_url)
+      expect(flash[:notice]).to eq('Post was successfully destroyed.')
     end
   end
 end

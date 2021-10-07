@@ -1,11 +1,11 @@
-<nav class="flex items-center justify-between flex-wrap bg-teal p-6">
-  <div class="flex items-center flex-no-shrink mr-6">
-    <span class="font-semibold text-xl tracking-tight">BLOG RoR7</span>
-  </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-    <div class="text-sm lg:flex-grow">
-      <%= link_to 'Posts', posts_path, class: 'block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-300 mr-4' %>
-      <%= link_to 'New Post', new_post_path, class: 'block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-300 mr-4' %>
-    </div>
-  </div>
-</nav>
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <%= link_to root_path, class: 'd-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none' do %>
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+    <span class="fs-4">BLOG RoR7</span>
+  <% end %>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item"><%= link_to 'Posts', posts_path, class: 'btn btn-outline-primary me-2' %></li>
+    <li class="nav-item"><%= link_to 'New Post', new_post_path, class: 'btn btn-outline-primary me-2' %></li>
+  </ul>
+</header>
