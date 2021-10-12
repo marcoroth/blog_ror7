@@ -2,6 +2,6 @@
   <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold"><%= post.title %></h1>
     <p class="col-md-8 fs-4"><%= post.content %></p>
-    <%= link_to 'Details of this post', post, class: 'btn btn-primary btn-small' %>
+    <%= link_to 'Details of this post', post, class: 'btn btn-primary btn-small', data: { turbo: false } %>
   </div>
 </div>
