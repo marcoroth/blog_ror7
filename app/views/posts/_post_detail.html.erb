@@ -1,0 +1,18 @@
+
+<div id="<%= dom_id post %>" class="p-4 mb-2 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Detail of post: <%= post.title %></h1>
+    <p class="col-md-8 fs-4"><%= post.content %></p>
+    <code>teste</code>
+    <hr />
+    <%= link_to '#', class: 'text-muted text-decoration-none' do %>
+      <%= fa_icon 'thumbs-up' %>
+      (123) like(s)
+    <% end %>
+    |
+    <%= link_to '#', class: 'text-muted text-decoration-none' do %>
+      <%= fa_icon 'comments' %>
+      (123) comment(s)
+    <% end %>
+  </div>
+</div>
