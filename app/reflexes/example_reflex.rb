@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'faker'
+
 class ExampleReflex < ApplicationReflex
   # Add Reflex methods in this file.
   #
@@ -26,8 +28,7 @@ class ExampleReflex < ApplicationReflex
   #   end
   #
     def fake_name
-      require 'faker'
-      morph "#fake_name": Faker::Name.name
+      morph "#fake_name", Faker::Name.name
     end
   #
   # Learn more at: https://docs.stimulusreflex.com/reflexes#reflex-classes

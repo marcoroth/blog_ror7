@@ -65,7 +65,7 @@ GEM
     bootsnap (1.9.1)
       msgpack (~> 1.0)
     builder (3.2.4)
-    cable_ready (4.5.0)
+    cable_ready (5.0.0.pre6)
       rails (>= 5.2)
       thread-local (>= 1.1.0)
     capybara (3.35.3)
@@ -238,8 +238,8 @@ GEM
     sqlite3 (1.4.2)
     stimulus-rails (0.6.2)
       rails (>= 6.0.0)
-    stimulus_reflex (3.4.1)
-      cable_ready (>= 4.5)
+    stimulus_reflex (3.5.0.pre6)
+      cable_ready (= 5.0.0.pre6)
       nokogiri
       rack
       rails (>= 5.2)
@@ -289,7 +289,7 @@ DEPENDENCIES
   simplecov (~> 0.21.2)
   sqlite3 (~> 1.4)
   stimulus-rails (>= 0.4.0)
-  stimulus_reflex
+  stimulus_reflex (~> 3.5.0.pre1)
   turbo-rails (>= 0.7.11)
   tzinfo-data
   web-console (>= 4.1.0)
