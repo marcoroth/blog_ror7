@@ -71,5 +71,5 @@ group :test do
   gem "shoulda-matchers", "~> 5.0"
 end
 
-
+gem 'stimulus_reflex'
 gem "font-awesome-rails"

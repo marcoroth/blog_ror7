@@ -32,3 +32,4 @@
 /config/master.key
 /coverage
 .DS_Store
+/node_modules
