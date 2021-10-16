@@ -57,4 +57,5 @@ export default class extends Controller {
   finalizeReflex (element, reflex, noop, reflexId) {
     // all operations have completed, animation etc is now safe
   }
+
 }
